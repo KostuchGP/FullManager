@@ -1,5 +1,3 @@
 Wszystkie dodatkowe informacje jakie potrzebuje, sugestie i rozwiazania
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
-
-  
