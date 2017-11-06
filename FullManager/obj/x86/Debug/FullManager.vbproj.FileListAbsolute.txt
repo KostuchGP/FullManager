@@ -1,0 +1,41 @@
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.INFITF.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\FullManager.vbproj.ResolveComReference.cache
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\FullManager.Form1.resources
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\FullManager.Resources.resources
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\FullManager.vbproj.GenerateResource.Cache
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.KnowledgewareTypeLib.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.MECMOD.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.CD5Integ.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Resources\Refresh1.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Resources\adobe-reader-logo2.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Resources\Bell_32x32.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Resources\Refresh3.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Resources\Refresh2.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\nowe.ico
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Full Manager 1.6.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Full Manager 1.6.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\Full Manager 1.6.xml
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Full Manager 1.6.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Full Manager 1.6.xml
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Full Manager 1.6.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.INFITF.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.KnowledgewareTypeLib.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.MECMOD.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.ResolveComReference.cache
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.6.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.6.xml
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.6.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Resources\Refresh1.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Resources\adobe-reader-logo2.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Resources\Bell_32x32.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Resources\Refresh3.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Resources\Refresh2.png
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\nowe.ico
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.6.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.6.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.6.xml
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Form1.resources
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Resources.resources
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.GenerateResource.Cache
