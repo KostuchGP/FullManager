@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Full Manger ver 1.0")> 
+<Assembly: AssemblyTitle("Full Manger ver 1.7")> 
 <Assembly: AssemblyDescription("Program to help manage a files in CATIA")> 
 <Assembly: AssemblyCompany("")> 
 <Assembly: AssemblyProduct("FullManager")> 

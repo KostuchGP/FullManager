@@ -14,6 +14,7 @@ Module CoreProgram
     Public prefixsuffixStatus As Boolean
     Public searchStatus As Boolean
     Public numberStatus As Boolean
+    Public charToDeleteStatus As Boolean
     Public lnn As Long
     Public sPN() As String
     Public lCount() As Long
@@ -25,7 +26,9 @@ Module CoreProgram
     Public objProductDoc As INFITF.Document
     Public objRootProduct As ProductStructureTypeLib.Product
     Public numberArray As String()
+    Public charToDeleteArray As String()
     Public rootPath As String
+    Private lnnadd As Integer
     Dim daneWpis2 As Wpis = New Wpis()
 
     'Starting Subroutine
@@ -65,7 +68,7 @@ Module CoreProgram
     'Subroutine for loading all documents from CATIA to ListView
     Public Sub Loading()
         For Each CoreProgram.openDoc In CATIA.Documents
-            If InStr(1, openDoc.Path, "pp") = 0 Then
+            If InStr(1, openDoc.Path, Form1.varGlobalLibraryPath) = 0 Then
                 Select Case TypeName(openDoc)
                     Case "PartDocument"
                         Form1.lvwMain.Items.Add(openDoc.Product.PartNumber).SubItems.Add(openDoc.Product.PartNumber)
@@ -95,6 +98,7 @@ Module CoreProgram
             mainData(i, 0) = i
             mainData(i, 1) = Form1.lvwMain.Items(i).Text
         Next
+        lnnadd = Form1.lvwMain.Items.Count - 1
     End Sub
     'Subroutine for changing Part Numbers with entry to the console
     Sub ZmianaPN()
@@ -102,7 +106,7 @@ Module CoreProgram
         Dim itm As ListViewItem
         Dim m As Integer
         For Each CoreProgram.openDoc In CATIA.Documents
-            If InStr(1, openDoc.Path, "pp") = 0 Then
+            If InStr(1, openDoc.Path, Form1.varGlobalLibraryPath) = 0 Then
                 Select Case TypeName(openDoc)
                     Case "PartDocument"
                         With Form1.lvwMain
@@ -141,20 +145,7 @@ Module CoreProgram
                 End Select
             End If
         Next
-
-        'To analize in the future
-        Dim itemList(20) As Item
-        itemList(4).col1 = 23
-        itemList(4).col2 = 45
-        itemList(4).col3 = "somestring"
-
     End Sub
-    'To analize
-    Structure Item
-        Dim col1 As Integer
-        Dim col2 As Integer
-        Dim col3 As String
-    End Structure
     'Subroutine to save Part and Product Documents with the same name as As Part Number with entry to the console || To change!
     Sub SaveAsPN()
         Dim itm As ListViewItem
@@ -179,7 +170,7 @@ Module CoreProgram
 
         CATIA.DisplayFileAlerts = False
         For Each CoreProgram.openDoc In CATIA.Documents
-            If InStr(1, openDoc.Path, "pp") = 0 Then
+            If InStr(1, openDoc.Path, Form1.varGlobalLibraryPath) = 0 Then
                 Select Case TypeName(openDoc)
                     Case "PartDocument"
                         With Form1.lvwMain
@@ -262,8 +253,6 @@ Module CoreProgram
     End Sub
     'Subroutine for adding prefix and suffix with entry to the console
     Sub AddPS()
-        Dim lnnadd As Integer
-        lnnadd = Form1.lvwMain.Items.Count - 1
         Dim prefixArray As String()
         Dim sufixArray As String()
         Dim prefixsufixArray As String()
@@ -278,21 +267,21 @@ Module CoreProgram
                     Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text
                 Next
             Else 'Only for selected Documents
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     If Form1.lvwMain.Items(i).Checked = True Then
                         prefixArray(i) = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text
                         Call checkadd(prefixArray(i), 0)
+                        If prefixStatus = True Then
+                            daneWpis2.Warning("You can not add a given prefix to the selected names")
+                            Exit Sub
+                        End If
                     End If
                 Next
-                If prefixStatus = True Then
-                    daneWpis2.Warning("You can not add a given prefix to the selected names")
-                Else
-                    For i = 0 To Form1.lvwMain.Items.Count - 1
-                        If Form1.lvwMain.Items(i).Checked = True Then
-                            Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text
-                        End If
-                    Next
-                End If
+                For i = 0 To lnnadd
+                    If Form1.lvwMain.Items(i).Checked = True Then
+                        Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text
+                    End If
+                Next
             End If
         End If
 
@@ -302,25 +291,26 @@ Module CoreProgram
 
         If Not Form1.SuffixValue = "" And Form1.PrefixValue = "" Then
             If Form1.optAll.Checked = True Then 'For all Documents
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     Form1.lvwMain.Items(i).SubItems(1).Text = Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
                 Next
             Else 'Only for selected Documents
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     If Form1.lvwMain.Items(i).Checked = True Then
                         sufixArray(i) = Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
                         Call checkadd(sufixArray(i), 1)
+                        If suffixStatus = True Then
+                            daneWpis2.Warning("You can not add a given suffix to the selected names")
+                            Exit Sub
+                        End If
                     End If
                 Next
-                If suffixStatus = True Then
-                    daneWpis2.Warning("You can not add a given suffix to the selected names")
-                Else
-                    For i = 0 To Form1.lvwMain.Items.Count - 1
-                        If Form1.lvwMain.Items(i).Checked = True Then
-                            Form1.lvwMain.Items(i).SubItems(1).Text = Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
-                        End If
-                    Next
-                End If
+                For i = 0 To lnnadd
+                    If Form1.lvwMain.Items(i).Checked = True Then
+                        Form1.lvwMain.Items(i).SubItems(1).Text = Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
+                    End If
+                Next
+
             End If
         End If
 
@@ -330,58 +320,54 @@ Module CoreProgram
 
         If Not Form1.PrefixValue = "" And Not Form1.SuffixValue = "" Then
             If Form1.optAll.Checked = True Then 'For all Documents
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
                 Next
             Else 'Only for selected Documents
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     If Form1.lvwMain.Items(i).Checked = True Then
                         prefixsufixArray(i) = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
                         Call checkadd(prefixsufixArray(i), 2)
+                        If prefixsuffixStatus = True Then
+                            daneWpis2.Warning("You can not add a given prefix and suffix to the selected names")
+                        End If
                     End If
                 Next
-                If prefixsuffixStatus = True Then
-                    daneWpis2.Warning("You can not add a given prefix and suffix to the selected names")
-                Else
-                    For i = 0 To Form1.lvwMain.Items.Count - 1
-                        If Form1.lvwMain.Items(i).Checked = True Then
-                            Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
-                        End If
-                    Next
-                End If
+                For i = 0 To lnnadd
+                    If Form1.lvwMain.Items(i).Checked = True Then
+                        Form1.lvwMain.Items(i).SubItems(1).Text = Form1.PrefixValue & Form1.lvwMain.Items(i).SubItems(1).Text & Form1.SuffixValue
+                    End If
+                Next
+
             End If
         End If
 
     End Sub
     'Subroutine for changing entry phrase with entry to the console
     Sub SearchAndReplace()
-        Dim lnnsearch As Integer
         Dim searchAllArray As String()
         Dim searchSelectedArray As String()
         searchStatus = False
-        lnnsearch = Form1.lvwMain.Items.Count - 1
-        ReDim searchAllArray(lnnsearch)
-        ReDim searchSelectedArray(lnnsearch)
+        ReDim searchAllArray(lnnadd)
+        ReDim searchSelectedArray(lnnadd)
 
         If Not Form1.search = "" Then ' Checking replace on all
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If (Form1.lvwMain.Items(i).SubItems(1).Text = Form1.replace1) = True Then
                     daneWpis2.Warning("The name is already taken")
                     Exit Sub
                 End If
             Next 'Checking if that what we make there is on the list
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If InStr(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search) > 0 Then
-                    If Form1.optAll.Checked = True Then
-                        'Action Search and Replace on all elements
+                    If Form1.optAll.Checked = True Then 'Action Search and Replace on all elements
                         searchAllArray(i) = Replace(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search, Form1.replace1)
                         Call checksearchandreplace(searchAllArray(i), 0, searchAllArray)
                         If searchStatus = True Then
                             daneWpis2.Warning("You can not swap")
                             Exit Sub
                         End If
-                    ElseIf Form1.lvwMain.Items(i).Checked = True Then
-                        'Action Search and Replace on selected elements 
+                    ElseIf Form1.lvwMain.Items(i).Checked = True Then 'Action Search and Replace on selected elements 
                         searchSelectedArray(i) = Replace(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search, Form1.replace1)
                         Call checksearchandreplace(searchSelectedArray(i), 0, searchSelectedArray)
                         If searchStatus = True Then
@@ -391,8 +377,7 @@ Module CoreProgram
                     End If
                 End If
             Next
-            If Form1.optAll.Checked = True Then
-                'Cheking all searchAllArray for all elements
+            If Form1.optAll.Checked = True Then 'Cheking all searchAllArray for all elements
                 For i = 0 To searchAllArray.Count - 1 ' nie wiem ile tu bedzie
                     If Not searchAllArray(i) Is Nothing Then
                         nrwystapien = 0
@@ -403,11 +388,10 @@ Module CoreProgram
                         End If
                     End If
                 Next
-                For i = 0 To Form1.lvwMain.Items.Count - 1
+                For i = 0 To lnnadd
                     Form1.lvwMain.Items(i).SubItems(1).Text = Replace(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search, Form1.replace1)
                 Next
-            Else
-                'Sprawdzanie calego searchSelectedArray dla Selected Elements
+            Else 'Sprawdzanie calego searchSelectedArray dla Selected Elements
                 For i = 0 To searchSelectedArray.Count - 1 ' nie wiem ile tu bedzie
                     If Not searchAllArray(i) Is Nothing Then
                         nrwystapien = 0
@@ -418,10 +402,10 @@ Module CoreProgram
                         End If
                     End If
                 Next
-                For k = 0 To Form1.lvwMain.Items.Count - 1
-                    If InStr(Form1.lvwMain.Items(k).SubItems(1).Text, Form1.search) > 0 Then
-                        If Form1.lvwMain.Items(k).Checked = True Then
-                            Form1.lvwMain.Items(k).SubItems(1).Text = Replace(Form1.lvwMain.Items(k).SubItems(1).Text, Form1.search, Form1.replace1)
+                For i = 0 To lnnadd
+                    If InStr(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search) > 0 Then
+                        If Form1.lvwMain.Items(i).Checked = True Then
+                            Form1.lvwMain.Items(i).SubItems(1).Text = Replace(Form1.lvwMain.Items(i).SubItems(1).Text, Form1.search, Form1.replace1)
                         End If
                     End If
                 Next
@@ -449,14 +433,12 @@ Module CoreProgram
         On Error Resume Next
         openDoc = CATIA.ActiveDocument
         If Err.Number <> 0 Then
-            Form1.txtConsole.Text &= Environment.NewLine & "Warning: " & Microsoft.VisualBasic.Chr(34) & "In CATIA Active window must be the Assembly (.CATProduct)" & Microsoft.VisualBasic.Chr(34)
-            'MsgBox("Aktywne okno musi byc produktem CATProduct")
+            daneWpis2.Warning("In CATIA Active window must be the Assembly (.CATProduct)")
             Exit Sub
         End If
         On Error GoTo 0
         If TypeName(openDoc) <> "ProductDocument" Then
-            Form1.txtConsole.Text &= Environment.NewLine & "Warning: " & Microsoft.VisualBasic.Chr(34) & "In CATIA Active window must be the Assembly (.CATProduct)" & Microsoft.VisualBasic.Chr(34)
-            'MsgBox("Aktywne okno musi byc produktem CATProduct")
+            daneWpis2.Warning("In CATIA Active window must be the Assembly (.CATProduct)")
             Exit Sub
         End If
         Dim myProduct As Product
@@ -469,16 +451,13 @@ Module CoreProgram
             sPartNumberCache(1) = ""
             bExistInCache = False
         Else
-            Form1.txtConsole.Text &= Environment.NewLine & "Warning: " & Microsoft.VisualBasic.Chr(34) & "The product is empty" & Microsoft.VisualBasic.Chr(34)
-            'MsgBox("Produkt jest pusty")
+            daneWpis2.Warning("The product is empty")
         End If
     End Sub
     'Subroutine for changing phrase "Copy (...) of"
     Sub DeleteCopyOf()
-        Dim lnnadd As Integer
         Dim numerPosition As Integer
         Dim numberLength As Integer
-        lnnadd = Form1.lvwMain.Items.Count - 1
 
         ReDim numberArray(lnnadd)
         For i = 0 To lnnadd
@@ -486,7 +465,7 @@ Module CoreProgram
         Next
 
         If Form1.optAll.Checked = True Then 'For all elements in ListView
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 numberLength = numberArray(i).Length
                 numerPosition = Form1.lvwMain.Items(i).SubItems(1).Text.LastIndexOf(") of ")
                 If Not numerPosition = -1 Then
@@ -494,7 +473,7 @@ Module CoreProgram
                 End If
             Next
         Else 'Actions on selected elements
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If Form1.lvwMain.Items(i).Checked = True Then
                     numberLength = numberArray(i).Length
                     numerPosition = Form1.lvwMain.Items(i).SubItems(1).Text.LastIndexOf(") of ")
@@ -508,10 +487,8 @@ Module CoreProgram
     End Sub
     'Subroutine do dodawania liczb do nazw 1## /dodaje loga z warningiem do Consoli
     Sub AddNumber()
-        Dim numberNew As Integer
-        Dim lnnadd As Integer
-        numberNew = Form1.number
-        lnnadd = Form1.lvwMain.Items.Count - 1
+        Dim numberNew As Long = numberNew = Form1.number
+        Dim lnnadd As Integer = Form1.lvwMain.Items.Count - 1
         Dim sprawdzana As String
 
         numberStatus = False
@@ -525,21 +502,19 @@ Module CoreProgram
         End If
 
         'Troche inna filozofia sprawdzania niz przy prefiksie czy sufixie poniewaz jezeli nie znajdzie problemu to nadpisuje przeszukiwany teren
-
         If Form1.optAll.Checked = True Then 'Actions on all elements
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 Form1.lvwMain.Items(i).SubItems(1).Text = numberArray(i) & numberNew
                 numberNew = numberNew + Form1.numberGrow
             Next
         Else 'Actions on selected elements
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If Form1.lvwMain.Items(i).Checked = True Then
                     sprawdzana = numberArray(i).ToString & numberNew
                     'wywolanie funkcji, która sprawdzi selected item z cala list boxem, jezeli wynik w ktoryms z kroków okaze sie konfliktowy to wstawi zmienna
                     Call checkadd(sprawdzana, 3)
                     If numberStatus = True Then
-                        Form1.txtConsole.Text &= Environment.NewLine & "Warning: " & Microsoft.VisualBasic.Chr(34) & "You can not add the given number to the selected names" & Microsoft.VisualBasic.Chr(34)
-                        'MsgBox("Nie mozna dodać podanego numeru do wybranych nazw", vbCritical)
+                        daneWpis2.Warning("You can not add the given number to the selected names")
                         Exit Sub
                     Else
                         numberArray(i) = sprawdzana
@@ -547,9 +522,43 @@ Module CoreProgram
                     numberNew = numberNew + Form1.numberGrow
                 End If
             Next
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If Form1.lvwMain.Items(i).Checked = True Then
                     Form1.lvwMain.Items(i).SubItems(1).Text = numberArray(i)
+                End If
+            Next
+        End If
+    End Sub
+    'Subroutine do usuwania znaków z początku nazw /dodaje loga z warningiem do Consoli
+    Sub CharToDelete()
+        Dim numberNewChar As Integer = Form1.numberCharToDel
+        Dim sprawdzana As String
+        charToDeleteStatus = False
+        ReDim charToDeleteArray(lnnadd)
+
+        For i = 0 To lnnadd
+            charToDeleteArray(i) = Form1.lvwMain.Items(i).SubItems(1).Text
+        Next
+
+        If Form1.optAll.Checked = False Then 'Actions on selected elements
+            For i = 0 To lnnadd
+                If Form1.lvwMain.Items(i).Checked = True Then
+                    'tutaj musze dac funkcje
+                    sprawdzana = (charToDeleteArray(i).ToString).Remove(0, numberNewChar)
+                    'wywolanie funkcji, która sprawdzi selected item z cala list boxem, jezeli wynik w ktoryms z kroków okaze sie konfliktowy to wstawi zmienna
+                    Call checkadd(sprawdzana, 4)
+                    If charToDeleteStatus = True Then
+                        daneWpis2.Warning("You can not delete letters from the selected names")
+                        Exit Sub
+                    Else
+                        charToDeleteArray(i) = sprawdzana
+                    End If
+                End If
+            Next
+
+            For i = 0 To lnnadd
+                If Form1.lvwMain.Items(i).Checked = True Then
+                    Form1.lvwMain.Items(i).SubItems(1).Text = charToDeleteArray(i)
                 End If
             Next
         End If
@@ -575,7 +584,7 @@ Module CoreProgram
         Dim itm As ListViewItem
         Dim m As Integer
         For Each CoreProgram.openDoc In CATIA.Documents
-            If InStr(1, openDoc.Path, "NuW") = 0 Then
+            If InStr(1, openDoc.Path, Form1.varGlobalLibraryPath) = 0 Then
                 Select Case TypeName(openDoc)
                     Case "PartDocument"
                         With Form1.lvwMain
@@ -584,7 +593,7 @@ Module CoreProgram
                                 m = itm.Index
                             End If
                         End With
-                        Form1.txtConsole.Text &= Environment.NewLine & "[CATPart Part Number] " & Microsoft.VisualBasic.Chr(34) & Form1.lvwMain.Items(m).SubItems(1).Text & Microsoft.VisualBasic.Chr(34) & " was changed to " & Microsoft.VisualBasic.Chr(34) & Microsoft.VisualBasic.Left(openDoc.Name, openDoc.Name.LastIndexOf(".CATPart")) & Microsoft.VisualBasic.Chr(34)
+                        daneWpis2.ChangePN(True, Form1.lvwMain.Items(m).SubItems(1).Text, Microsoft.VisualBasic.Left(openDoc.Name, openDoc.Name.LastIndexOf(".CATPart")))
                         Form1.lvwMain.Items(m).SubItems(1).Text = openDoc.Product.PartNumber
                         l = l + 1
                     Case "ProductDocument"
@@ -594,42 +603,49 @@ Module CoreProgram
                                 m = itm.Index
                             End If
                         End With
-                        Form1.txtConsole.Text &= Environment.NewLine & "[CATProduct Part Number] " & Microsoft.VisualBasic.Chr(34) & Form1.lvwMain.Items(m).SubItems(1).Text & Microsoft.VisualBasic.Chr(34) & " was changed to " & Microsoft.VisualBasic.Chr(34) & Microsoft.VisualBasic.Left(openDoc.Name, openDoc.Name.LastIndexOf(".CATProduct")) & Microsoft.VisualBasic.Chr(34)
+                        daneWpis2.ChangePN(False, Form1.lvwMain.Items(m).SubItems(1).Text, Microsoft.VisualBasic.Left(openDoc.Name, openDoc.Name.LastIndexOf(".CATProduct")))
                         Form1.lvwMain.Items(m).SubItems(1).Text = openDoc.Product.PartNumber
                         l = l + 1
                 End Select
             End If
         Next
-        Form1.txtConsole.Text &= Environment.NewLine & "Information: " & Microsoft.VisualBasic.Chr(34) & "Changing Part Number As File Name end successful" & Microsoft.VisualBasic.Chr(34)
+        daneWpis2.Info("Changing Part Number As File Name end successful")
     End Sub
     'Dodatkowa funkcja sprawdzajaca przez ostatecznym dodaniem prefixu i sufixu
     Function checkadd(ByVal myadd As String, ByVal wyznacznik As Long)
         On Error Resume Next
         If wyznacznik = 0 Then
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If (Form1.lvwMain.Items(i).SubItems(1).Text = myadd) = True Then
                     prefixStatus = True
                     Exit For
                 End If
             Next
         ElseIf wyznacznik = 1 Then
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If (Form1.lvwMain.Items(i).SubItems(1).Text = myadd) = True Then
                     suffixStatus = True
                     Exit For
                 End If
             Next
         ElseIf wyznacznik = 2 Then
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If (Form1.lvwMain.Items(i).SubItems(1).Text = myadd) = True Then
                     prefixsuffixStatus = True
                     Exit For
                 End If
             Next
         ElseIf wyznacznik = 3 Then
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If (numberArray(i) = myadd) = True Then
                     numberStatus = True
+                    Exit For
+                End If
+            Next
+        ElseIf wyznacznik = 4 Then
+            For i = 0 To lnnadd
+                If (charToDeleteArray(i) = myadd) = True Then
+                    charToDeleteStatus = True
                     Exit For
                 End If
             Next
@@ -639,7 +655,7 @@ Module CoreProgram
     Function checksearchandreplace(ByVal myreplace As String, ByVal wyznacznik As Long, ByVal myArray As String())
         On Error Resume Next
         If wyznacznik = 0 Then
-            For i = 0 To Form1.lvwMain.Items.Count - 1
+            For i = 0 To lnnadd
                 If Form1.lvwMain.Items(i).SubItems(1).Text = myreplace Then
                     searchStatus = True
                     Exit For

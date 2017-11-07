@@ -3,12 +3,14 @@ Imports MECMOD
 Imports ProductStructureTypeLib
 
 Public Class Form1
+    Public varGlobalLibraryPath As String = "pp"
     Private prefix As String
     Private suffix As String
     Public search As String
     Public replace1 As String
-    Public number As Integer
+    Public number As Long
     Public numberGrow As Integer
+    Public numberCharToDel As Integer
     Private errorStatus As Boolean = False
     Dim sortColumn As Integer = -1
     Dim daneWpis As Wpis = New Wpis()
@@ -18,7 +20,7 @@ Public Class Form1
 
     Public Property ErrorStatusValue As Boolean
         Get
-            Return ErrorStatus
+            Return errorStatus
         End Get
         Set(ByVal value As Boolean)
             errorStatus = value
@@ -146,6 +148,7 @@ Public Class Form1
         btnPNAsFN.Enabled = True
         btnManual.Enabled = True
         txtManual.Enabled = True
+        btnCharToDel.Enabled = False
         If optAll.Checked = True Then
             txtConsole.Text &= Environment.NewLine & "Information: " & Microsoft.VisualBasic.Chr(34) & "The all elements mode was turned on" & Microsoft.VisualBasic.Chr(34)
         End If
@@ -158,7 +161,7 @@ Public Class Form1
         btnManual.Enabled = False
         txtManual.Clear()
         txtManual.Enabled = False
-
+        btnCharToDel.Enabled = True
         If optSelected.Checked = True Then
             MsgBox("W tym trybie nie można ręcznie zmieniać nazw", MsgBoxStyle.Information)
             daneWpis.Info("The selected elements mode was turned on")
@@ -488,13 +491,14 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub btnTest_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTest.Click
-        Dim myProduct As Product
-        myProduct = mainDoc.Product
-        For i = 1 To myProduct.Products.Count
-            myProduct.Products.Item(i).Name = "Siema" & "." & i
-        Next
+    Private Sub btnCharToDel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCharToDel.Click
+        Me.UseWaitCursor = True
+        CharToDelete()
+        Me.UseWaitCursor = False
+    End Sub
 
+    Private Sub nudNumberCharToDel_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nudNumberCharToDel.ValueChanged
+        numberCharToDel = nudNumberCharToDel.Value
     End Sub
 End Class
 

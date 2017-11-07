@@ -39,3 +39,23 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\o
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.exe
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.xml
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.pdb
+e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.INFITF.dll
+e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.KnowledgewareTypeLib.dll
+e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.MECMOD.dll
+e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.ProductStructureTypeLib.dll
+e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\FullManager.vbproj.ResolveComReference.cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Resources\Refresh1.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Resources\adobe-reader-logo2.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Resources\Bell_32x32.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Resources\Refresh3.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Resources\Refresh2.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\nowe.ico
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Full Manager 1.7.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Full Manager 1.7.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Release\Full Manager 1.7.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\FullManager.Form1.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\FullManager.Resources.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\FullManager.vbproj.GenerateResource.Cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.pdb

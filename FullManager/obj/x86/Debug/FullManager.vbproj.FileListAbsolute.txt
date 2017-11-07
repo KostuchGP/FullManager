@@ -39,3 +39,23 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\b
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Form1.resources
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Resources.resources
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.GenerateResource.Cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Resources\Refresh1.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Resources\adobe-reader-logo2.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Resources\Bell_32x32.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Resources\Refresh3.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Resources\Refresh2.png
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\nowe.ico
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Interop.INFITF.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Interop.KnowledgewareTypeLib.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Interop.MECMOD.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.ResolveComReference.cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\FullManager.Form1.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\FullManager.Resources.resources
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.GenerateResource.Cache
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Full Manager 1.7.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Full Manager 1.7.pdb
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\bin\Debug\Full Manager 1.7.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.exe
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.xml
+E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.pdb

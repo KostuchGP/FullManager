@@ -1,0 +1,21 @@
+Wszystkie dodatkowe informacje jakie potrzebuje, sugestie i rozwiazania
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+  
+
+	'To analize in the future
+	Dim itemList(20) As Item
+	itemList(4).col1 = 23
+	itemList(4).col2 = 45
+	itemList(4).col3 = "somestring"
+    'To analize
+    Structure Item
+        Dim col1 As Integer
+        Dim col2 As Integer
+        Dim col3 As String
+    End Structure
+	
+****Usuwanie starych plików po akcji save as
+****Opcja cofnij:D
+
+
