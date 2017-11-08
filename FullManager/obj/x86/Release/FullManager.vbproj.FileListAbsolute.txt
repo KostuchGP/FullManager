@@ -25,9 +25,6 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\b
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Resources\Refresh3.png
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Resources\Refresh2.png
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\nowe.ico
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.6.exe
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.6.pdb
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.6.xml
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.INFITF.dll
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.KnowledgewareTypeLib.dll
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.MECMOD.dll
@@ -36,9 +33,6 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\o
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.Form1.resources
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.Resources.resources
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.vbproj.GenerateResource.Cache
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.exe
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.xml
-C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.6.pdb
 e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.INFITF.dll
 e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.KnowledgewareTypeLib.dll
 e:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Interop.MECMOD.dll
@@ -59,3 +53,9 @@ E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x8
 E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.exe
 E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.xml
 E:\Dokumenty\Informatyka\Git\ProjektsVisualStudio\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.xml
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.exe
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.pdb
+C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.xml

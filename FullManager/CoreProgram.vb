@@ -487,8 +487,7 @@ Module CoreProgram
     End Sub
     'Subroutine do dodawania liczb do nazw 1## /dodaje loga z warningiem do Consoli
     Sub AddNumber()
-        Dim numberNew As Long = numberNew = Form1.number
-        Dim lnnadd As Integer = Form1.lvwMain.Items.Count - 1
+        Dim numberNew As Long = Form1.number
         Dim sprawdzana As String
 
         numberStatus = False

@@ -18,4 +18,4 @@ Wszystkie dodatkowe informacje jakie potrzebuje, sugestie i rozwiazania
 ****Usuwanie starych plików po akcji save as
 ****Opcja cofnij:D
 
-
+*Jest dziwny error, pojawia się w momencie kolejności nadpisywania partów, jezeli ktos zapisze cos z nowa nazwa i i chce zmienic z 2 na 1,a 1 jest zajeta to pojawia sie error
