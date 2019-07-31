@@ -55,5 +55,5 @@ Grzegorz Pawezowski - Initial work
 
 License
 
-All right reserved Grzgorz Pawezowski 2019
+All right reserved Grzegorz Pawezowski 2019
 ---------------------------------------------------------
