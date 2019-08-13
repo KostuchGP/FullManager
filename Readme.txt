@@ -24,10 +24,10 @@ Prerequisites
 
 Installing
 
-1) Run file: Setup Tool FM 1.6[current version].exe
+1) Run file: Setup Tool FM 1.7[current version].exe
 2) Read README file
 3) Choose your directory to install tool
-4) Run Tool Full Manager 1.6.exe
+4) Run Tool Full Manager 1.7.exe
 5) You can make a shortcut to your Deskop Ctrl+Shift and drop to Deskop
 ---------------------------------------------------------
 
@@ -46,7 +46,7 @@ If after this test there no warning system, just only Message Box with informati
 
 Versioning
 
-Current version of Tool Full Manger is 1.6. You can read about every changes in Guide File.
+Current version of Tool Full Manger is 1.7. You can read about every changes in Guide File.
 
 Authors
 
