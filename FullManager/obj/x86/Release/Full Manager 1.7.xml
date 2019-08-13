@@ -15,10 +15,6 @@ FullManager1.7
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
-</member><member name="P:FullManager.My.Resources.Resources.adobe_reader_logo2">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
 </member><member name="P:FullManager.My.Resources.Resources.Bell_32x32">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

@@ -59,3 +59,18 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\b
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.exe
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.xml
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.ResolveComReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Form1.resources
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.vbproj.GenerateResource.Cache
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.INFITF.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.KnowledgewareTypeLib.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.MECMOD.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Interop.ProductStructureTypeLib.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\nowe.ico
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\FullManager.Resources.resources
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.7.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.7.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Debug\Full Manager 1.7.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Debug\Full Manager 1.7.pdb

@@ -59,3 +59,18 @@ C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\o
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.exe
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.pdb
 C:\Users\RWSwiss\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.vbproj.ResolveComReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Full Manager 1.7.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\nowe.ico
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.exe
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\bin\Release\Full Manager 1.7.xml
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.INFITF.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.KnowledgewareTypeLib.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.MECMOD.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\Interop.ProductStructureTypeLib.dll
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.Form1.resources
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.Resources.resources
+C:\Users\Lenovo\Documents\Visual Studio 2010\Projects\FullManager\FullManager\obj\x86\Release\FullManager.vbproj.GenerateResource.Cache

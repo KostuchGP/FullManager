@@ -500,6 +500,10 @@ Public Class Form1
     Private Sub nudNumberCharToDel_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nudNumberCharToDel.ValueChanged
         numberCharToDel = nudNumberCharToDel.Value
     End Sub
+
+    Private Sub lblAuthor_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lblAuthor.Click
+
+    End Sub
 End Class
 
 Class ListViewItemComparer

@@ -101,7 +101,7 @@ Partial Class Form1
         Me.txtManual.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtManual.Location = New System.Drawing.Point(108, 330)
         Me.txtManual.Name = "txtManual"
-        Me.txtManual.Size = New System.Drawing.Size(753, 26)
+        Me.txtManual.Size = New System.Drawing.Size(902, 26)
         Me.txtManual.TabIndex = 2
         '
         'optAll
@@ -161,7 +161,7 @@ Partial Class Form1
         Me.txtSearch.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSearch.Location = New System.Drawing.Point(98, 3)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(739, 26)
+        Me.txtSearch.Size = New System.Drawing.Size(888, 26)
         Me.txtSearch.TabIndex = 5
         '
         'txtReplace
@@ -171,7 +171,7 @@ Partial Class Form1
         Me.txtReplace.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtReplace.Location = New System.Drawing.Point(98, 36)
         Me.txtReplace.Name = "txtReplace"
-        Me.txtReplace.Size = New System.Drawing.Size(739, 26)
+        Me.txtReplace.Size = New System.Drawing.Size(888, 26)
         Me.txtReplace.TabIndex = 6
         '
         'btnSearchAndReplace
@@ -180,7 +180,7 @@ Partial Class Form1
         Me.btnSearchAndReplace.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnSearchAndReplace.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnSearchAndReplace.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSearchAndReplace.Location = New System.Drawing.Point(688, 68)
+        Me.btnSearchAndReplace.Location = New System.Drawing.Point(837, 68)
         Me.btnSearchAndReplace.Name = "btnSearchAndReplace"
         Me.btnSearchAndReplace.Size = New System.Drawing.Size(145, 29)
         Me.btnSearchAndReplace.TabIndex = 7
@@ -275,7 +275,7 @@ Partial Class Form1
         Me.btnApply.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnApply.BackColor = System.Drawing.Color.LightGreen
         Me.btnApply.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnApply.Location = New System.Drawing.Point(639, 575)
+        Me.btnApply.Location = New System.Drawing.Point(788, 575)
         Me.btnApply.Name = "btnApply"
         Me.btnApply.Size = New System.Drawing.Size(222, 29)
         Me.btnApply.TabIndex = 9
@@ -288,7 +288,7 @@ Partial Class Form1
         Me.btnClose.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnClose.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClose.Location = New System.Drawing.Point(783, 610)
+        Me.btnClose.Location = New System.Drawing.Point(932, 610)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(78, 29)
         Me.btnClose.TabIndex = 16
@@ -300,7 +300,7 @@ Partial Class Form1
         Me.btnSaveAsPN.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSaveAsPN.BackColor = System.Drawing.Color.SkyBlue
         Me.btnSaveAsPN.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSaveAsPN.Location = New System.Drawing.Point(538, 610)
+        Me.btnSaveAsPN.Location = New System.Drawing.Point(687, 610)
         Me.btnSaveAsPN.Name = "btnSaveAsPN"
         Me.btnSaveAsPN.Size = New System.Drawing.Size(239, 29)
         Me.btnSaveAsPN.TabIndex = 10
@@ -312,7 +312,7 @@ Partial Class Form1
         Me.btnSaveAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSaveAll.BackColor = System.Drawing.Color.SkyBlue
         Me.btnSaveAll.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSaveAll.Location = New System.Drawing.Point(538, 575)
+        Me.btnSaveAll.Location = New System.Drawing.Point(687, 575)
         Me.btnSaveAll.Name = "btnSaveAll"
         Me.btnSaveAll.Size = New System.Drawing.Size(97, 29)
         Me.btnSaveAll.TabIndex = 14
@@ -325,7 +325,7 @@ Partial Class Form1
         Me.btnInstanceName.BackColor = System.Drawing.Color.Yellow
         Me.btnInstanceName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnInstanceName.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnInstanceName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnInstanceName.ForeColor = System.Drawing.Color.Black
         Me.btnInstanceName.Location = New System.Drawing.Point(151, 541)
         Me.btnInstanceName.Name = "btnInstanceName"
         Me.btnInstanceName.Size = New System.Drawing.Size(235, 29)
@@ -339,7 +339,7 @@ Partial Class Form1
         Me.btnManual.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.btnManual.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.btnManual.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnManual.Location = New System.Drawing.Point(783, 362)
+        Me.btnManual.Location = New System.Drawing.Point(932, 362)
         Me.btnManual.Name = "btnManual"
         Me.btnManual.Size = New System.Drawing.Size(78, 29)
         Me.btnManual.TabIndex = 3
@@ -364,7 +364,7 @@ Partial Class Form1
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Location"
-        Me.ColumnHeader4.Width = 200
+        Me.ColumnHeader4.Width = 380
         '
         'lvwMain
         '
@@ -379,7 +379,7 @@ Partial Class Form1
         Me.lvwMain.Location = New System.Drawing.Point(12, 12)
         Me.lvwMain.MultiSelect = False
         Me.lvwMain.Name = "lvwMain"
-        Me.lvwMain.Size = New System.Drawing.Size(849, 312)
+        Me.lvwMain.Size = New System.Drawing.Size(998, 312)
         Me.lvwMain.TabIndex = 1
         Me.lvwMain.UseCompatibleStateImageBehavior = False
         Me.lvwMain.View = System.Windows.Forms.View.Details
@@ -442,7 +442,7 @@ Partial Class Form1
         Me.TabMainForm.Location = New System.Drawing.Point(12, 397)
         Me.TabMainForm.Name = "TabMainForm"
         Me.TabMainForm.SelectedIndex = 0
-        Me.TabMainForm.Size = New System.Drawing.Size(849, 139)
+        Me.TabMainForm.Size = New System.Drawing.Size(998, 139)
         Me.TabMainForm.TabIndex = 4
         '
         'TabPage1
@@ -458,7 +458,7 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(841, 108)
+        Me.TabPage1.Size = New System.Drawing.Size(990, 108)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Search And Replace"
         '
@@ -617,12 +617,12 @@ Partial Class Form1
         Me.lblAuthor.Name = "lblAuthor"
         Me.lblAuthor.Size = New System.Drawing.Size(269, 17)
         Me.lblAuthor.TabIndex = 22
-        Me.lblAuthor.Text = "Full Manager © 2017 Grzegorz Pawęzowski"
+        Me.lblAuthor.Text = "Full Manager © 2019 Grzegorz Pawęzowski"
         '
         'btnRefresh
         '
         Me.btnRefresh.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnRefresh.BackgroundImage = Global.FullManager.My.Resources.Resources.Refresh1
+        Me.btnRefresh.BackgroundImage = CType(resources.GetObject("btnRefresh.BackgroundImage"), System.Drawing.Image)
         Me.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefresh.ForeColor = System.Drawing.Color.Transparent
@@ -636,7 +636,7 @@ Partial Class Form1
         '
         Me.picBell.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.picBell.BackColor = System.Drawing.Color.Transparent
-        Me.picBell.BackgroundImage = Global.FullManager.My.Resources.Resources.Bell_32x32
+        Me.picBell.BackgroundImage = CType(resources.GetObject("picBell.BackgroundImage"), System.Drawing.Image)
         Me.picBell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.picBell.Location = New System.Drawing.Point(458, 389)
         Me.picBell.Name = "picBell"
@@ -650,7 +650,7 @@ Partial Class Form1
         '
         Me.btnHelp.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnHelp.BackColor = System.Drawing.Color.Transparent
-        Me.btnHelp.BackgroundImage = Global.FullManager.My.Resources.Resources.adobe_reader_logo2
+        Me.btnHelp.BackgroundImage = CType(resources.GetObject("btnHelp.BackgroundImage"), System.Drawing.Image)
         Me.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnHelp.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHelp.Location = New System.Drawing.Point(12, 542)
@@ -664,7 +664,7 @@ Partial Class Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(198, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(873, 649)
+        Me.ClientSize = New System.Drawing.Size(1022, 649)
         Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.picBell)
         Me.Controls.Add(Me.lblAuthor)
@@ -686,7 +686,7 @@ Partial Class Form1
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.MinimumSize = New System.Drawing.Size(700, 550)
+        Me.MinimumSize = New System.Drawing.Size(800, 550)
         Me.Name = "Form1"
         Me.Text = "Full Manager 1.7"
         CType(Me.nudNumberGrow, System.ComponentModel.ISupportInitialize).EndInit()
